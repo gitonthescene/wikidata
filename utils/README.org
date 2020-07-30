@@ -1,4 +1,7 @@
-* This folder contains collections of data used for cross-referencing/enriching data elsewhere in this project
+* Cross-referencing utilities
+  This folder contains collections of data used for cross-referencing/enriching data elsewhere in
+  this project
+
 ** US State/Constituency map
     Wikidata has different entity types for a [[https://www.wikidata.org/wiki/Q35657][state of the United States]] and a [[https://www.wikidata.org/wiki/Q58425000][state constituency]].
     There is one for each of the 50 states.  [[file:state-constituency-map.json][state-constituency-map.json]] contains a mapping between

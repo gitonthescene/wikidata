@@ -1,0 +1,13 @@
+* Historical United States Senators
+
+This project was started to try to reconcile data available from Wikidata with data at the
+congressional [[https://bioguideretro.congress.gov/][bioguide site]].
+
+** Files
+  - [[file:historical-senator-congresses.tsv][historical-senator-congresses.tsv]] is data pulled from the bioguide with some enriched information
+  - [[file:wikisenclasses.tsv][wikisenclasses.tsv]] is data pulled from the lists per state of historical senators. (e.g. [[https://en.wikipedia.org/wiki/List_of_United_States_senators_from_Georgia][Georgia]])
+  - [[file:senclasses.tsv][senclasses.tsv]] contains data from the bioguide after being run through a program to backout the
+    class from info on the current congress
+  - [[file:wikisenclasses-extra.tsv][wikisenclasses-extra.tsv]] is simply a breakout of wikisenclasses.tsv of rows not found in senclasses.tsv
+  - [[file:senclasses-extra.tsv][senclasses-extra.tsv]] is a breakout of senclasses.tsv of rows not found in wikisenclasses.tsv
+
