@@ -21,6 +21,9 @@ congressional [[https://bioguideretro.congress.gov/][bioguide site]].
 
 ** Details
 *** Historical Senator Congresses
+    :PROPERTIES:
+    :CUSTOM_ID: histsens
+    :END:
     From the [[https://bioguideretro.congress.gov/][bioguide]] you can search for senators by congress.  Each senator has their own bioguide
     entry linked in the results.  ( For instance [[https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=B000084][Abraham Baldwin]] is linked from the list of Senators
     in the first congress. )  Each member has a Member XML file from this page.  ([[https://bioguideretro.congress.gov/Static_Files/data/B/B000084.xml][This]] is the one
@@ -45,7 +48,7 @@ congressional [[https://bioguideretro.congress.gov/][bioguide site]].
     at senate.gov.  Currently, this list is being reconciled against a [[https://en.wikipedia.org/wiki/List_of_appointed_United_States_senators][similar one]] on Wikipedia.
 
 *** Senator classes
-    This file contains one row for row of the table describe in [[Historical Senator Congresses]] above.
+    This file contains one row for row of the table describe in [[#histsens][Historical Senator Congresses]] above.
     The Senate Class for each of the current Senators was pulled from this list of [[https://www.senate.gov/general/contact_information/senators_cfm.cfm][Senators of the
     116th Congress]].  (There is an [[https://www.senate.gov/general/contact_information/senators_cfm.xml][xml file]] linked there for easy processing.)  Then a one-off
     program was written to backfill the Senate Class for historical Senators by trying to guess
