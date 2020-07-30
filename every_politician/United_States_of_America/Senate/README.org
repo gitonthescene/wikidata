@@ -5,9 +5,78 @@ congressional [[https://bioguideretro.congress.gov/][bioguide site]].
 
 ** Files
   - [[file:historical-senator-congresses.tsv][historical-senator-congresses.tsv]] is data pulled from the bioguide with some enriched information
-  - [[file:wikisenclasses.tsv][wikisenclasses.tsv]] is data pulled from the lists per state of historical senators. (e.g. [[https://en.wikipedia.org/wiki/List_of_United_States_senators_from_Georgia][Georgia]])
+  - [[file:wikisenclasses.tsv][wikisenclasses.tsv]] is data pulled from the Wikipedia lists per state of historical
+    senators. (e.g. [[https://en.wikipedia.org/wiki/List_of_United_States_senators_from_Georgia][Georgia]])
   - [[file:senclasses.tsv][senclasses.tsv]] contains data from the bioguide after being run through a program to backout the
     class from info on the current congress
   - [[file:wikisenclasses-extra.tsv][wikisenclasses-extra.tsv]] is simply a breakout of wikisenclasses.tsv of rows not found in senclasses.tsv
   - [[file:senclasses-extra.tsv][senclasses-extra.tsv]] is a breakout of senclasses.tsv of rows not found in wikisenclasses.tsv
+
+** Processing
+   The above general descriptions describe the sources of the data in the files, but the actual
+   content of the files have gone through several rounds of refining using both one-off programs and
+   manual inspection.
+
+   The main tool used for reconciliation has been [[https://openrefine.org/][OpenRefine]].
+
+** Details
+*** Historical Senator Congresses
+    From the [[https://bioguideretro.congress.gov/][bioguide]] you can search for senators by congress.  Each senator has their own bioguide
+    entry linked in the results.  ( For instance [[https://bioguideretro.congress.gov/Home/MemberDetails?memIndex=B000084][Abraham Baldwin]] is linked from the list of Senators
+    in the first congress. )  Each member has a Member XML file from this page.  ([[https://bioguideretro.congress.gov/Static_Files/data/B/B000084.xml][This]] is the one
+    for Abraham Baldwin.)
+
+    These XML files contain info on which congresses the given senator has served in as well as a
+    `uscongress-bio id` which serves as a unique identifier for each Senator.  They also make up the
+    bulk of info in the table of historical senators congresses.
+
+    The data was pulled in to OpenRefine and the fullname was reconciled against the Wiki base.
+    This amounts to guessing which entry applies to the row based on the fullname.  To help with
+    reconciliation and extra column was temporarily added to indicate that the name refers to a
+    United States Senator.  Still there was ambiguity because of the prevalence of father/son pairs
+    serving in the Senate.
+
+    The `wikientity` column contains the /entity name/ of the Wikidata entry and was extracted from
+    the reconciled column using the transformation =cell.recon.match.id=.
+
+    Initial values for `start time` and `end time` were filled in with the start and end time of the
+    given Congress using Wikidata as the source of this information.  The plan is to adjust the
+    start time for senators who started mid-Congress using the [[https://www.senate.gov/senators/AppointedSenators.htm][list of Appointed Senators]] available
+    at senate.gov.  Currently, this list is being reconciled against a [[https://en.wikipedia.org/wiki/List_of_appointed_United_States_senators][similar one]] on Wikipedia.
+
+*** Senator classes
+    This file contains one row for row of the Historical Senator Congresses table described above.
+    The Senate Class for each of the current Senators was pulled from this list of [[https://www.senate.gov/general/contact_information/senators_cfm.cfm][Senators of the
+    116th Congress]].  (There is an [[https://www.senate.gov/general/contact_information/senators_cfm.xml][xml file]] linked there for easy processing.)  Then a one-off
+    program was written to backfill the Senate Class for historical Senators by trying to guess
+    which Senator replaced which.  In an ideal world, the Senate Class model would ensure that only
+    one Senator from each state would be replaced in each election.  The reality is far from this
+    ideal.  A fair number of exceptions were manually inspected and adjusted using Wikipedia as the
+    source of information when none other was available.
+
+*** Wiki Senator Classes
+    This file is mostly just a straight dump of the lists of historical senators referred to above.
+
+*** Reconciliation
+    With two files containing a row for each combination of congress number, state and class and
+    senator.  For the cases where there is only one such for the combination of congress number,
+    state and class the senator names should match.  For these cases we should then have a mapping
+    from the `bioguide_id` to the wiki `entity` name and that mapping can be used to extrapoloate to
+    the cases where there is no one-to-one mapping.  The Wiki Senator Classes file was updated with
+    this mapping.
+
+    Naturally, there were problems, such as having two options when extrapolating or names simply
+    not being close the their supposed "match".  Further checks were run to test that the lower case
+    versions of last names and first names matched.  Not one of these checks tied out exactly, but
+    the reduced the number of cases requiring manual inspection.
+
+    The reconciliation to the Wiki base in the Historical Senator Congress was also brought in play
+    as a further check.  Both mappings were refined in the process.
+
+    Eventually the mapping between identifiers was brought to be one-to-one.
+
+*** Differences
+    After the identifiers were matched we were in a position to find rows which occured in one table
+    and not the other.  For convenience these were broken out into separate tables and enhanced with
+    full URL's to the source of the senator data.
 
