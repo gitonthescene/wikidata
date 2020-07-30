@@ -1,0 +1,19 @@
+* This folder contains collections of data used for cross-referencing/enriching data elsewhere in this project
+** US State/Constituency map
+    Wikidata has different entity types for a [[https://www.wikidata.org/wiki/Q35657][state of the United States]] and a [[https://www.wikidata.org/wiki/Q58425000][state constituency]].
+    There is one for each of the 50 states.  [[file:state-constituency-map.json][state-constituency-map.json]] contains a mapping between
+    these two entities.
+
+    This mapping is generated from the Wikidata database with the following query
+
+    #+begin_src sql
+    SELECT DISTINCT ?state ?stateLabel ?shortName ?constituency WHERE {
+      ?state wdt:P31 wd:Q35657;
+        wdt:P1813 ?shortName;
+        rdfs:label ?stateLabel.
+      ?constituency wdt:P31 wd:Q58425000;
+                    rdfs:label ?stateLabel.
+      FILTER((STRLEN(?shortName)) = 2 )
+      FILTER((LANG(?stateLabel)) = "en")
+    }
+    #+end_src
