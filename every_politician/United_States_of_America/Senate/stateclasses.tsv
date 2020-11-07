@@ -1,0 +1,51 @@
+state	wikistate	stateLabel	higher_seat	lower_seat	class1	class2
+CT	http://www.wikidata.org/entity/Q779	Connecticut	Connecticut senate seat (Class 3)	Connecticut senate seat (Class 1)	1	3
+DE	http://www.wikidata.org/entity/Q1393	Delaware	Delaware senate seat (Class 2)	Delaware senate seat (Class 1)	1	2
+GA	http://www.wikidata.org/entity/Q1428	Georgia	Georgia senate seat (Class 3)	Georgia senate seat (Class 2)	2	3
+MA	http://www.wikidata.org/entity/Q771	Massachusetts	Massachusetts senate seat (Class 2)	Massachusetts senate seat (Class 1)	1	2
+MD	http://www.wikidata.org/entity/Q1391	Maryland	Maryland senate seat (Class 3)	Maryland senate seat (Class 1)	1	3
+NC	http://www.wikidata.org/entity/Q1454	North Carolina	North Carolina senate seat (Class 3)	North Carolina senate seat (Class 2)	2	3
+NH	http://www.wikidata.org/entity/Q759	New Hampshire	New Hampshire senate seat (Class 3)	New Hampshire senate seat (Class 2)	2	3
+NJ	http://www.wikidata.org/entity/Q1408	New Jersey	New Jersey senate seat (Class 2)	New Jersey senate seat (Class 1)	1	2
+NY	http://www.wikidata.org/entity/Q1384	New York	New York senate seat (Class 3)	New York senate seat (Class 1)	1	3
+PA	http://www.wikidata.org/entity/Q1400	Pennsylvania	Pennsylvania senate seat (Class 3)	Pennsylvania senate seat (Class 1)	1	3
+RI	http://www.wikidata.org/entity/Q1387	Rhode Island	Rhode Island senate seat (Class 2)	Rhode Island senate seat (Class 1)	1	2
+SC	http://www.wikidata.org/entity/Q1456	South Carolina	South Carolina senate seat (Class 3)	South Carolina senate seat (Class 2)	2	3
+VA	http://www.wikidata.org/entity/Q1370	Virginia	Virginia senate seat (Class 2)	Virginia senate seat (Class 1)	1	2
+KY	http://www.wikidata.org/entity/Q1603	Kentucky	Kentucky senate seat (Class 3)	Kentucky senate seat (Class 2)	2	3
+OH	http://www.wikidata.org/entity/Q1397	Ohio	Ohio senate seat (Class 3)	Ohio senate seat (Class 1)	1	3
+TN	http://www.wikidata.org/entity/Q1509	Tennessee	Tennessee senate seat (Class 2)	Tennessee senate seat (Class 1)	1	2
+VT	http://www.wikidata.org/entity/Q16551	Vermont	Vermont senate seat (Class 3)	Vermont senate seat (Class 1)	1	3
+AK	http://www.wikidata.org/entity/Q797	Alaska	Alaska senate seat (Class 3)	Alaska senate seat (Class 2)	2	3
+AL	http://www.wikidata.org/entity/Q173	Alabama	Alabama senate seat (Class 3)	Alabama senate seat (Class 2)	2	3
+AR	http://www.wikidata.org/entity/Q1612	Arkansas	Arkansas senate seat (Class 3)	Arkansas senate seat (Class 2)	2	3
+AZ	http://www.wikidata.org/entity/Q816	Arizona	Arizona senate seat (Class 3)	Arizona senate seat (Class 1)	1	3
+CA	http://www.wikidata.org/entity/Q99	California	California senate seat (Class 3)	California senate seat (Class 1)	1	3
+CO	http://www.wikidata.org/entity/Q1261	Colorado	Colorado senate seat (Class 3)	Colorado senate seat (Class 2)	2	3
+FL	http://www.wikidata.org/entity/Q812	Florida	Florida senate seat (Class 3)	Florida senate seat (Class 1)	1	3
+HI	http://www.wikidata.org/entity/Q782	Hawaii	Hawaii senate seat (Class 3)	Hawaii senate seat (Class 1)	1	3
+IA	http://www.wikidata.org/entity/Q1546	Iowa	Iowa senate seat (Class 3)	Iowa senate seat (Class 2)	2	3
+ID	http://www.wikidata.org/entity/Q1221	Idaho	Idaho senate seat (Class 3)	Idaho senate seat (Class 2)	2	3
+IL	http://www.wikidata.org/entity/Q1204	Illinois	Illinois senate seat (Class 3)	Illinois senate seat (Class 2)	2	3
+IN	http://www.wikidata.org/entity/Q1415	Indiana	Indiana senate seat (Class 3)	Indiana senate seat (Class 1)	1	3
+KS	http://www.wikidata.org/entity/Q1558	Kansas	Kansas senate seat (Class 3)	Kansas senate seat (Class 2)	2	3
+LA	http://www.wikidata.org/entity/Q1588	Louisiana	Louisiana senate seat (Class 3)	Louisiana senate seat (Class 2)	2	3
+ME	http://www.wikidata.org/entity/Q724	Maine	Maine senate seat (Class 2)	Maine senate seat (Class 1)	1	2
+MI	http://www.wikidata.org/entity/Q1166	Michigan	Michigan senate seat (Class 2)	Michigan senate seat (Class 1)	1	2
+MN	http://www.wikidata.org/entity/Q1527	Minnesota	Minnesota senate seat (Class 2)	Minnesota senate seat (Class 1)	1	2
+MO	http://www.wikidata.org/entity/Q1581	Missouri	Missouri senate seat (Class 3)	Missouri senate seat (Class 1)	1	3
+MS	http://www.wikidata.org/entity/Q1494	Mississippi	Mississippi senate seat (Class 2)	Mississippi senate seat (Class 1)	1	2
+MT	http://www.wikidata.org/entity/Q1212	Montana	Montana senate seat (Class 2)	Montana senate seat (Class 1)	1	2
+ND	http://www.wikidata.org/entity/Q1207	North Dakota	North Dakota senate seat (Class 3)	North Dakota senate seat (Class 1)	1	3
+NE	http://www.wikidata.org/entity/Q1553	Nebraska	Nebraska senate seat (Class 2)	Nebraska senate seat (Class 1)	1	2
+NM	http://www.wikidata.org/entity/Q1522	New Mexico	New Mexico senate seat (Class 2)	New Mexico senate seat (Class 1)	1	2
+NV	http://www.wikidata.org/entity/Q1227	Nevada	Nevada senate seat (Class 3)	Nevada senate seat (Class 1)	1	3
+OK	http://www.wikidata.org/entity/Q1649	Oklahoma	Oklahoma senate seat (Class 3)	Oklahoma senate seat (Class 2)	2	3
+OR	http://www.wikidata.org/entity/Q824	Oregon	Oregon senate seat (Class 3)	Oregon senate seat (Class 2)	2	3
+SD	http://www.wikidata.org/entity/Q1211	South Dakota	South Dakota senate seat (Class 3)	South Dakota senate seat (Class 2)	2	3
+TX	http://www.wikidata.org/entity/Q1439	Texas	Texas senate seat (Class 2)	Texas senate seat (Class 1)	1	2
+UT	http://www.wikidata.org/entity/Q829	Utah	Utah senate seat (Class 3)	Utah senate seat (Class 1)	1	3
+WA	http://www.wikidata.org/entity/Q1223	Washington	Washington senate seat (Class 3)	Washington senate seat (Class 1)	1	3
+WI	http://www.wikidata.org/entity/Q1537	Wisconsin	Wisconsin senate seat (Class 3)	Wisconsin senate seat (Class 1)	1	3
+WV	http://www.wikidata.org/entity/Q1371	West Virginia	West Virginia senate seat (Class 2)	West Virginia senate seat (Class 1)	1	2
+WY	http://www.wikidata.org/entity/Q1214	Wyoming	Wyoming senate seat (Class 2)	Wyoming senate seat (Class 1)	1	2
